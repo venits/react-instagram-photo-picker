@@ -36,9 +36,9 @@ import InstagramPhotoPicker from 'react-instagram-photo-picker';
 Add to your render method:
 ```js
 <InstagramPhotoPicker
-	 onPhotosPicked={photos => console.warn(photos)}
-     show={true}
-     accessToken={window.InstAuth.getAccessToken()}
+	onPhotosPicked={photos => console.warn(photos)}
+	show={true}
+	accessToken={window.InstAuth.getAccessToken()}
 />
 ```
 Initially you want to set **show** prop to **false**. Later when user clicks for example *'Pick photo from Instagram'* you can change it to **true**.
@@ -59,13 +59,13 @@ You can create reference to **InstagramPhotoPicker** component and use some of c
 ```
 *Available methods:*
 1. showDialog()
-2.  hideDialog()
-3.  getInstagramImages()
+2. hideDialog()
+3. getInstagramImages()
 
 
 ## Summary
 
-I hope that you will find this module useful and also if you have any problems or questions please let me know I will be more than happy to help you :)
+I hope that you will find this module useful, also if you have any problems or questions please let me know, I will be more than happy to help you :)
 
 My email: tomasz.przybyl.it@gmail.com
 
