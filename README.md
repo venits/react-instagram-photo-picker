@@ -8,15 +8,14 @@ Implementing **Instagram API** may be difficult for some developers, that is why
 
 It is *clear and fast way* to implement nice looking **(and working)** photo picker for Instagram photos in your React application.
 
-After successful login, user can pick images and you as developer will receive **an array of photos URLs**, which you may use in your application.
+After successful login, user can pick images and you as developer will receive **an array of photos URL**.
 
 
 ## Requirements
 
 All you need is Instagram **access_token** that you receive after successful login to Instagram account.
 
-If you install [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) modulem you don't have to worry about authentication because my library will take care of it. 
-It is also mine module so I can ensure you that it works ;)
+If you install [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) modulem you don't have to worry about authentication because my library will take care of it. It is also mine module so I can ensure you that it works ;)
 
 ## Preview
 
