@@ -15,7 +15,9 @@ After successful login, user can pick images and you as developer will receive *
 
 All you need is Instagram **access_token** that you receive after successful login to Instagram account.
 
-If you install [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) modulem you don't have to worry about authentication because my library will take care of it. It is also mine module so I can ensure you that it works ;)
+If you install [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) module you don't have to worry about authentication because my library will take care of it. 
+
+**It is also mine module so I can ensure you that it works ;)**
 
 ## Preview
 
