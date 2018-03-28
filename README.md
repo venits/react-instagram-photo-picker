@@ -48,9 +48,7 @@ You can also get all downloaded images:
 this.instaDialog.getInstagramImages();
 ```
 
-**InstagramPhotoPicker** will search for instagram **accessToken** in window.InstAuth.accessToken so make sure you are using [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) module.
-
-Prop **onPhotosPicked** will be called when user click **Confirm** button.
+**InstagramPhotoPicker** will search for instagram `accessToken` in `window.InstAuth.accessToken` so make sure you are using [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) module.
 
 
 ## Summary
