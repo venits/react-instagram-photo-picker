@@ -15,7 +15,7 @@ After successful login, user can pick images and you as developer will receive *
 
 All you need is Instagram **access_token** that you receive after successful login to Instagram account.
 
-If you install [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) module you don't have to worry about authentication because my library will take care of it. 
+If you install [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) module you don't have to worry about authentication because this library will take care of it. 
 
 **It is also mine module so I can ensure you that it works ;)**
 
@@ -36,9 +36,9 @@ import InstagramPhotoPicker from 'react-instagram-photo-picker';
 Add to your render method:
 ```js
 <InstagramPhotoPicker
-	onPhotosPicked={photos => console.warn(photos)}
-	show={true}
-	accessToken={window.InstAuth.getAccessToken()}
+  onPhotosPicked={photos => console.warn(photos)}
+  show={true}
+  accessToken={window.InstAuth.getAccessToken()}
 />
 ```
 Initially you want to set **show** prop to **false**. Later when user clicks for example *'Pick photo from Instagram'* you can change it to **true**.
@@ -54,7 +54,7 @@ You can notice **onPhotosPicked** prop which will be our callback for action whe
 You can create reference to **InstagramPhotoPicker** component and use some of cool methods.
 ```js
 <InstagramPhotoPicker
-	ref={ref => {this.instaDialog = ref;}}
+  ref={ref => this.instaDialog = ref}
 />
 ```
 *Available methods:*
