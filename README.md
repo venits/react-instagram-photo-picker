@@ -44,6 +44,7 @@ Add to your render method:
 Initially you want to set **show** prop to **false**. Later when user clicks for example *'Pick photo from Instagram'* you can change it to **true**.
 
 Ass you can see here I am using **window.InstAuth.getAccessToken()**. 
+
 You will get that after you install [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) module.
 
 **You don't have to worry if access_token is null or undefined, my module will take care of that and display button 'Login to Instagram' first of all.**
