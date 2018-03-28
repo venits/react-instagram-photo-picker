@@ -33,26 +33,24 @@ Add to your render method:
 ```js
 <InstagramPhotoPicker
   onPhotosPicked={photos => console.warn(photos)}
-  show={true}
-  accessToken={window.InstAuth.getAccessToken()}
+  ref={ref => this.instaDialog = ref}
 />
+```
+
+To show dialog, simply call:
+```js
+this.instaDialog.showDialog();
+// or if you want to hide:
+this.instaDialog.hideDialog();
+```
+You can also get all downloaded images:
+```js
+this.instaDialog.getInstagramImages();
 ```
 
 **InstagramPhotoPicker** will search for instagram **accessToken** in window.InstAuth.accessToken so make sure you are using [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) module.
 
-Prop **onPhotosPicked** will be called when user click **'Confirm'** button.
-
-## Advanced Usages
-You can create reference to **InstagramPhotoPicker** component and use some of cool methods.
-```js
-<InstagramPhotoPicker
-  ref={ref => this.instaDialog = ref}
-/>
-```
-*Available methods:*
-1. showDialog()
-2. hideDialog()
-3. getInstagramImages()
+Prop **onPhotosPicked** will be called when user click **Confirm** button.
 
 
 ## Summary
