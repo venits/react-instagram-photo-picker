@@ -33,6 +33,7 @@ Also, save `clientID` because it will be needed in component.
 ## Preview
 
 ![Preview](https://raw.githubusercontent.com/venits/react-instagram-photo-picker/master/preview.png)
+![Preview](https://raw.githubusercontent.com/venits/react-instagram-photo-picker/master/preview2.png)
 
 ## Usage
 
