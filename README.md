@@ -8,6 +8,8 @@ Implementing **Instagram API** may be difficult for some developers, that is why
 
 It is *clear and fast way* to implement nice looking **(and working)** photo picker for Instagram photos in your React application.
 
+Component is using [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) module for authorization.
+
 
 ## Requirements
 
@@ -61,9 +63,6 @@ You can also get all downloaded images:
 ```js
 this.instaDialog.getInstagramImages();
 ```
-
-**InstagramPhotoPicker** will search for instagram `accessToken` in `window.InstAuth.accessToken` so make sure you are using [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) module.
-
 
 ## Summary
 
