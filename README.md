@@ -11,9 +11,22 @@ It is *clear and fast way* to implement nice looking **(and working)** photo pic
 
 ## Requirements
 
-All you need is Instagram **access_token** that you receive after successful login to Instagram account.
+First of all go to [Instagram Developer Console](https://www.instagram.com/developer/) and create your app.
 
-Install [instagram-web-oauth](https://github.com/venits/instagram-web-oauth) module so you don't have to worry about authentication because this library will take care of it. 
+After creating app go to: **Manage Clients -> Manage -> Security.**
+
+*Some important notes:*
+1. **Disable implicit OAuth** - must be unchecked, otherwise we will not be able to use Implicit flow!
+
+2. **Valid redirect URIs** - To make thing easier I hardcoded endpoint that my module is using.
+
+Just add **instagram_auth** to URI in which you will be using my module.
+
+*For example your redirect URI can look like this: `http://localhost:3000/instagram_auth`.*
+
+Also, save `clientID` because it will be needed in component.
+
+![Demo](https://raw.githubusercontent.com/venits/instagram-web-oauth/master/instauth.png)
 
 ## Preview
 
@@ -34,6 +47,7 @@ Add to your render method:
 <InstagramPhotoPicker
   onPhotosPicked={photos => console.warn(photos)}
   ref={ref => this.instaDialog = ref}
+  clientId={instagram_client_id}
 />
 ```
 
